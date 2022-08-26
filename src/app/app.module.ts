@@ -1,14 +1,20 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser'; 
 
 import { AppComponent } from './app.component';
+import { MaterialModule } from './material.module';
+import { CoreModule } from './core/core.module';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MaterialModule,
+    CoreModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
